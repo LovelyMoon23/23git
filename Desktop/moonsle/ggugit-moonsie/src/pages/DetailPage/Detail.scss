@@ -1,0 +1,134 @@
+@import '../../styles/variables.scss';
+@import '../../styles/common.scss';
+@import '../../styles/reset.scss';
+
+main {
+  z-index: -1;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
+  padding-top: 180px;
+  max-width: 1180px;
+
+  .detailWrap {
+    .topInfo {
+      display: flex;
+      position: relative;
+
+      .imgDetailWrap {
+        position: relative;
+        flex-direction: column;
+      }
+
+      .dishInfoWrap {
+        width: 100%;
+        padding-left: 90px;
+
+        .titleWrap {
+          padding-bottom: 30px;
+
+          .subTitle,
+          .title {
+            font-size: 30px;
+            line-height: 40px;
+            font-weight: 700px;
+          }
+
+          .originInfo {
+            font-size: 30px;
+            line-height: 40px;
+            font-weight: 400px;
+          }
+        }
+
+        .cartButton {
+          padding-top: 50px;
+          button {
+            width: 490px;
+            background-color: #bed619;
+            padding: 15px;
+            border: 1px solid transparent;
+            font-size: 20px;
+            color: black;
+
+            cursor: pointer;
+          }
+        }
+      }
+    }
+    .tabWrap {
+      padding: 30px 0 10px 30px;
+      border-bottom: solid 1px #dbdbdb;
+      font-size: 20px;
+      font-weight: 700;
+    }
+  }
+
+  .infoWrap {
+    .infoDetail {
+      display: flex;
+      .detailDescriptionBox {
+        margin-top: 100px;
+        min-height: 100vh;
+
+        .subTitle {
+          font-size: 40px;
+          text-align: center;
+          padding-top: 50px;
+        }
+        .subText {
+          font-size: 24px;
+        }
+      }
+
+      .cartStickBar {
+        margin: 0 auto;
+        text-align: center;
+        margin-top: 100px;
+        width: 376px;
+        margin-left: 20px;
+        min-height: 100vh;
+        position: sticky;
+        border: solid 1px #dbdbdb;
+
+        .deliveryDateNotification {
+          .notiTitle {
+            padding: 40px 0;
+            font-size: 20px;
+            font-weight: 700;
+            border-bottom: solid 1px #dbdbdb;
+          }
+          .notiContent {
+            padding-top: 20px;
+            color: #606060;
+            font-size: 12px;
+          }
+        }
+
+        .stickyCartButton {
+          padding-top: 50px;
+
+          button {
+            width: 310px;
+            background-color: #bed619;
+            padding: 15px;
+            bottom: 10px;
+            right: 100px;
+            border: 1px solid transparent;
+            font-size: 20px;
+            color: black;
+            cursor: pointer;
+          }
+        }
+        .totalPrice {
+          color: #ee0700;
+          font-size: 32px;
+          line-height: 48px;
+          font-weight: 700;
+          padding: 10px 5px 0 0;
+          float: right;
+        }
+      }
+    }
+  }
+}
